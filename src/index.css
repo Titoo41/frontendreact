@@ -1,0 +1,31 @@
+/* Estilos globales para el cuerpo */
+body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Helvetica Neue', sans-serif; /* Cambio a la fuente 'Inter' */
+  background-color: #f8f9fa; /* Fondo claro para todo el cuerpo */
+  color: #333; /* Color de texto predeterminado */
+  line-height: 1.6; /* Espaciado entre líneas más cómodo */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves para cambios de color */
+}
+
+body.dark-mode {
+  background-color: #121212; /* Fondo oscuro en modo oscuro */
+  color: #e0e0e0; /* Color de texto más claro */
+}
+
+/* Estilo para el código */
+code {
+  font-family: 'Fira Code', 'Menlo', 'Monaco', Consolas, 'Courier New', monospace; /* Cambiar a 'Fira Code' para una apariencia más moderna */
+  background-color: #f0f0f0; /* Fondo gris claro para bloques de código */
+  padding: 2px 6px; /* Agregar algo de espaciado interno */
+  border-radius: 4px; /* Bordes ligeramente redondeados */
+  color: #d63384; /* Color de texto para el código */
+  font-size: 90%; /* Fuente ligeramente más pequeña */
+}
+
+code.dark-mode {
+  background-color: #333; /* Fondo oscuro para el código en modo oscuro */
+  color: #ff79c6; /* Color más brillante para el código en modo oscuro */
+}

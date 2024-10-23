@@ -1,0 +1,172 @@
+/* Dashboard.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+/* Contenedor principal del Dashboard */
+.dashboard-container {
+  background: linear-gradient(135deg, #e8f5e9, #ffeb3b); /* Verdes claros y amarillos */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Nombre de usuario */
+.user-name {
+  font-size: 24px;
+  color: #1b5e20; /* Verde oscuro */
+}
+
+/* Información del usuario */
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+/* Imagen de perfil */
+.profile-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+/* Botones */
+.logout-btn {
+  margin-left: 15px;
+  padding: 12px 24px;
+  font-size: 20px;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  background-color: #4caf50; /* Verde primario */
+}
+
+/* Efecto hover para botones */
+.logout-btn:hover {
+  background-color: #388e3c; /* Verde más oscuro */
+}
+
+/* Sección de tareas */
+.tasks-section {
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Título de la sección de tareas */
+.tasks-section h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #1b5e20; /* Verde oscuro */
+}
+
+/* Contenedor de tarjetas de tareas */
+.tasks-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Tarjetas de tareas */
+.task-card {
+  border: 1px solid #cddc39; /* Amarillo claro */
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: calc(33.333% - 20px);
+  background: linear-gradient(135deg, #ffffff, #bbdefb); /* Azul claro degradado */
+  transition: transform 0.2s;
+}
+
+.task-card:hover {
+  transform: scale(1.02);
+}
+
+/* Título de las tarjetas */
+.task-card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1976d2; /* Azul marino */
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* Texto de descripción en tarjetas */
+.task-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.task-description {
+  font-size: 14px;
+  color: #555;
+}
+
+.task-resume {
+  font-size: 12px;
+  color: #777;
+  font-style: italic;
+}
+
+/* Título de tareas */
+.tasks-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+  color: #1b5e20; /* Verde oscuro */
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 40px;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  line-height: 1.4;
+  border-bottom: 2px solid #fbc02d; /* Amarillo dorado */
+  padding-bottom: 10px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.view-users-btn {
+  background-color: #1976d2; /* Azul marino */
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 24px;
+  font-size: 20px;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.5px;
+}
+
+/* Efecto hover */
+.view-users-btn:hover {
+  background-color: #0d47a1; /* Azul más oscuro */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Efecto focus (cuando el botón es enfocado) */
+.view-users-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(25, 118, 210, 0.5); /* Sombra azul clara */
+}
